@@ -19,6 +19,9 @@ const devConfig = {
             exposes: {
                 './MarketingApp': './src/bootstrap'
             },
+            remotes: {
+                auth: 'auth@http://localhost:8082/remoteEntry.js'
+            },
             shared: packageJson.dependencies
         }),
     ]
