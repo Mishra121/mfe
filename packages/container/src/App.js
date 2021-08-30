@@ -18,6 +18,7 @@ export default () => (
             <Route path="/auth" component={AuthApp} />
             <Route path="/" component={MarketingApp} />
         </Switch>
+        Hi There ! Learning Micro Forntends
     </div>
     </BrowserRouter>
     </StylesProvider>
