@@ -16,9 +16,13 @@ const devConfig = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
+            filename: 'remoteEntry.js',
             remotes: {
                 marketing: 'marketing@http://localhost:8081/remoteEntry.js',
                 auth: 'auth@http://localhost:8082/remoteEntry.js'
+            },
+            exposes: {
+                './HeaderComponent': './src/components/Header'
             },
             shared: packageJson.dependencies
         }),

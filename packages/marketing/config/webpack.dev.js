@@ -20,7 +20,8 @@ const devConfig = {
                 './MarketingApp': './src/bootstrap'
             },
             remotes: {
-                auth: 'auth@http://localhost:8082/remoteEntry.js'
+                auth: 'auth@http://localhost:8082/remoteEntry.js',
+                container: 'container@http://localhost:8080/remoteEntry.js'
             },
             shared: packageJson.dependencies
         }),
